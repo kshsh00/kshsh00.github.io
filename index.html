@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kavish Shah — Information security professional specializing in vulnerability assessment and penetration testing (VAPT) across web, API, and thick-client applications.">
+  <meta name="author" content="Kavish Shah">
+  <meta name="theme-color" content="#050807">
+  <title>kavish@sec:~$ — Information Security &amp; VAPT Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Subtle CRT scanline texture overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Top Terminal Command Bar -->
+  <header class="site-header" id="top">
+    <div class="header-shell">
+      <a class="brand" href="#intro" aria-label="Kavish Shah — Home">
+        <span class="brand-user">kavish</span><span class="brand-sep">@</span><span class="brand-host">vapt</span><span class="brand-sep">:~$</span><span class="brand-cursor" aria-hidden="true">█</span>
+      </a>
+
+      <nav class="cmd-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="cmd-nav-list">
+          <li><a class="cmd-link is-active" href="#intro"><span class="cmd-idx">00</span>intro</a></li>
+          <li><a class="cmd-link" href="#skills"><span class="cmd-idx">01</span>skills</a></li>
+          <li><a class="cmd-link" href="#experience"><span class="cmd-idx">02</span>exp</a></li>
+          <li><a class="cmd-link" href="#research"><span class="cmd-idx">03</span>bounty</a></li>
+          <li><a class="cmd-link" href="#credentials"><span class="cmd-idx">04</span>certs</a></li>
+          <li class="cmd-divider" aria-hidden="true"></li>
+          <li><a class="cmd-link" href="#contact"><span class="cmd-idx">05</span>contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <button
+          type="button"
+          class="menu-toggle"
+          id="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <svg class="icon-menu" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <line x1="4" y1="7" x2="20" y2="7"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="17" x2="20" y2="17"></line>
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#intro"><span>[00]</span> Intro</a></li>
+        <li><a href="#skills"><span>[01]</span> Approach &amp; Skills</a></li>
+        <li><a href="#experience"><span>[02]</span> Selected Experience</a></li>
+        <li><a href="#research"><span>[03]</span> Bug Bounty &amp; HTB Labs</a></li>
+        <li><a href="#credentials"><span>[04]</span> Certifications &amp; Education</a></li>
+        <li><a href="#contact"><span>[05]</span> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Tactical HUD Frame -->
+    <section class="hero-section" id="intro" aria-labelledby="hero-heading">
+      <div class="hero-frame">
+        <!-- HUD Corner Brackets -->
+        <span class="bracket bracket-tl" aria-hidden="true"></span>
+        <span class="bracket bracket-tr" aria-hidden="true"></span>
+        <span class="bracket bracket-bl" aria-hidden="true"></span>
+        <span class="bracket bracket-br" aria-hidden="true"></span>
+
+        <!-- Atmospheric Cyber Topology Backdrop -->
+        <div class="hero-backdrop" aria-hidden="true">
+          <svg class="topo-svg" viewBox="0 0 980 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="phosphorGlow" cx="50%" cy="46%" r="50%">
+                <stop offset="0%" stop-color="#00ff88" stop-opacity="0.2"/>
+                <stop offset="52%" stop-color="#00ff88" stop-opacity="0.06"/>
+                <stop offset="100%" stop-color="#050807" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="nodeGlow" x="-25%" y="-25%" width="150%" height="150%">
+                <feGaussianBlur stdDeviation="2.6"/>
+              </filter>
+            </defs>
+            <rect width="980" height="620" fill="url(#phosphorGlow)"/>
+            <!-- Radar rings -->
+            <g stroke="#00ff88" stroke-opacity="0.09" stroke-dasharray="4 6">
+              <circle cx="490" cy="300" r="130"/>
+              <circle cx="490" cy="300" r="225"/>
+              <circle cx="490" cy="300" r="320"/>
+            </g>
+            <!-- Node mesh -->
+            <g stroke="#00ff88" stroke-opacity="0.22" stroke-width="1.2">
+              <line x1="175" y1="165" x2="320" y2="115"/>
+              <line x1="320" y1="115" x2="490" y2="95"/>
+              <line x1="490" y1="95" x2="660" y2="125"/>
+              <line x1="660" y1="125" x2="805" y2="195"/>
+              <line x1="175" y1="165" x2="295" y2="270"/>
+              <line x1="320" y1="115" x2="295" y2="270"/>
+              <line x1="320" y1="115" x2="465" y2="230"/>
+              <line x1="490" y1="95" x2="465" y2="230"/>
+              <line x1="490" y1="95" x2="625" y2="245"/>
+              <line x1="660" y1="125" x2="625" y2="245"/>
+              <line x1="805" y1="195" x2="625" y2="245"/>
+              <line x1="805" y1="195" x2="765" y2="365"/>
+              <line x1="175" y1="165" x2="215" y2="360"/>
+              <line x1="215" y1="360" x2="295" y2="270"/>
+              <line x1="295" y1="270" x2="465" y2="230"/>
+              <line x1="465" y1="230" x2="625" y2="245"/>
+              <line x1="295" y1="270" x2="360" y2="415"/>
+              <line x1="465" y1="230" x2="360" y2="415"/>
+              <line x1="465" y1="230" x2="560" y2="400"/>
+              <line x1="625" y1="245" x2="560" y2="400"/>
+              <line x1="625" y1="245" x2="765" y2="365"/>
+              <line x1="215" y1="360" x2="360" y2="415"/>
+              <line x1="360" y1="415" x2="560" y2="400"/>
+              <line x1="560" y1="400" x2="765" y2="365"/>
+              <line x1="360" y1="415" x2="490" y2="515"/>
+              <line x1="560" y1="400" x2="490" y2="515"/>
+            </g>
+            <g fill="#00ff88" fill-opacity="0.5" filter="url(#nodeGlow)">
+              <circle cx="175" cy="165" r="5"/>
+              <circle cx="320" cy="115" r="6"/>
+              <circle cx="490" cy="95" r="6"/>
+              <circle cx="660" cy="125" r="5"/>
+              <circle cx="805" cy="195" r="5"/>
+              <circle cx="295" cy="270" r="6"/>
+              <circle cx="465" cy="230" r="7"/>
+              <circle cx="625" cy="245" r="6"/>
+              <circle cx="215" cy="360" r="5"/>
+              <circle cx="360" cy="415" r="6"/>
+              <circle cx="560" cy="400" r="6"/>
+              <circle cx="765" cy="365" r="5"/>
+              <circle cx="490" cy="515" r="5"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- Top Telemetry Row -->
+        <div class="hero-top-meta">
+          <span class="hud-tag hud-tag-live">
+            <span class="live-dot" aria-hidden="true"></span>
+            OFFENSIVE_SECURITY // VAPT
+          </span>
+          <span class="hud-tag">SCOPE: WEB · API · THICK-CLIENT</span>
+        </div>
+
+        <!-- Hero Main Grid: Identity + Live Terminal Window -->
+        <div class="hero-main-grid">
+          <div class="hero-identity">
+            <p class="prompt-eyebrow">
+              <span class="prompt-glyph" aria-hidden="true">$</span>
+              <span id="typed-cmd" data-cmd="whoami">whoami</span>
+            </p>
+
+            <h1 id="hero-heading" class="hero-title">
+              <span class="title-bright">KAVISH</span>
+              <span class="title-dim">SHAH<span class="accent-block" aria-hidden="true">_</span></span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Hi, my name is Kavish Shah — an information security practitioner focused on vulnerability assessment and penetration testing across web, API, and thick-client applications. I enjoy finding real weaknesses in how software handles access and explaining the risk clearly so teams can actually fix it.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#experience">
+                <span>./view-experience</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="btn btn-ghost" href="mc_resume.pdf" target="_blank" rel="noopener noreferrer">
+                <span>cat mc_resume.pdf</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Terminal Output Card -->
+          <aside class="terminal-window" aria-label="Profile overview terminal">
+            <div class="term-chrome">
+              <div class="term-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="term-title">kavish@vapt: ~/profile</span>
+              <span class="term-mode">RO</span>
+            </div>
+
+            <div class="term-body">
+              <p class="term-cmd"><span class="t-green">┌──(</span><span class="t-cyan">kavish@sec</span><span class="t-green">)-[</span><span class="t-white">~/profile</span><span class="t-green">]</span></p>
+              <p class="term-cmd term-cmd-line"><span class="t-green">└─$</span> cat scope.json</p>
+
+              <pre class="term-json"><code>{
+  <span class="t-key">"focus"</span>: [<span class="t-str">"Web VAPT"</span>, <span class="t-str">"API Security"</span>, <span class="t-str">"Thick-Client"</span>],
+  <span class="t-key">"internships"</span>: <span class="t-str">"SecurityBoat, Pune (2023 &amp; 2025)"</span>,
+  <span class="t-key">"manual_testing"</span>: <span class="t-str">"15+ web &amp; API applications"</span>,
+  <span class="t-key">"bug_bounty"</span>: {
+    <span class="t-key">"platform"</span>: <span class="t-str">"HackerOne (2024–Present)"</span>,
+    <span class="t-key">"targets"</span>: [<span class="t-str">"Booking.com"</span>, <span class="t-str">"Bykea"</span>, <span class="t-str">"Syfe"</span>],
+    <span class="t-key">"badges"</span>: <span class="t-str">"9 total (4 OWASP)"</span>
+  },
+  <span class="t-key">"labs"</span>: <span class="t-str">"Hack The Box — Linux, Windows &amp; Web CTFs"</span>,
+  <span class="t-key">"reporting"</span>: <span class="t-str">"Business-impact &amp; compliance risk"</span>
+}</code></pre>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 01: Methodology & Skills Loadout -->
+    <section class="section" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <p class="section-kicker">
+          <span class="kicker-prompt">$</span>
+          <span class="kicker-num">01</span>
+          <span class="kicker-sep">//</span>
+          <span>METHODOLOGY &amp; TOOLKIT</span>
+        </p>
+
+        <div class="approach-grid">
+          <div>
+            <h2 id="approach-heading" class="section-h2">
+              <span class="line-bright">Always curious.</span>
+              <span class="line-muted">Focused on safer software<span class="accent-dot">.</span></span>
+            </h2>
+          </div>
+
+          <div class="approach-body">
+            <p class="body-copy">
+              Hi, I’m Kavish. My focus has always been on how real applications break — specifically web, API, and thick-client systems where authentication, authorization, or access-control checks fail. I want security to be something teams genuinely understand and prioritize, so I focus on clear, practical findings instead of noisy scanner dumps.
+            </p>
+            <p class="body-copy">
+              I like to keep myself sharp by hunting for bugs on HackerOne, solving Linux, Windows, and web CTF challenges on Hack The Box, and building custom Burp Suite workflows and Python PoC scripts. Whether I’m checking third-party TLS configurations, working with developers to retest a patch, or writing business-impact reports for non-technical readers, my goal is to help make applications more secure — even when the work happens behind the scenes.
+            </p>
+
+            <div class="pipeline-box" role="region" aria-label="Assessment pipeline">
+              <p class="pipeline-comment"># assessment pipeline</p>
+              <p class="pipeline-cmd">
+                <span class="t-green">discover</span>(attack_surface)
+                <span class="t-sep">|</span>
+                <span class="t-cyan">validate</span>(burp, python_poc)
+                <span class="t-sep">|</span>
+                <span class="t-green">report</span>(business_impact)
+                <span class="t-sep">|</span>
+                <span class="t-white">retest</span>(patch)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Loadout Matrix -->
+        <div class="skills-matrix" id="skills" aria-labelledby="skills-heading">
+          <div class="matrix-header">
+            <h3 id="skills-heading" class="matrix-title">&gt;_ LOADOUT // SKILLS &amp; TOOLING</h3>
+            <span class="matrix-meta">3 GROUPS · VERIFIED FROM RESUME</span>
+          </div>
+
+          <div class="matrix-row">
+            <span class="matrix-label">[SECURITY]</span>
+            <ul class="chip-list">
+              <li class="chip">Web Security</li>
+              <li class="chip">API Security</li>
+              <li class="chip">Thick Client Security</li>
+              <li class="chip">Bug Bounty</li>
+              <li class="chip">Secure SDLC</li>
+              <li class="chip">Risk Reporting</li>
+              <li class="chip">Active Directory</li>
+              <li class="chip">Network Pentest</li>
+              <li class="chip">OAuth / SAML</li>
+              <li class="chip">Cryptography (TLS / PKI)</li>
+            </ul>
+          </div>
+
+          <div class="matrix-row">
+            <span class="matrix-label">[TOOLS]</span>
+            <ul class="chip-list">
+              <li class="chip">Burp Suite</li>
+              <li class="chip">Postman</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Git</li>
+            </ul>
+          </div>
+
+          <div class="matrix-row">
+            <span class="matrix-label">[LANGUAGES]</span>
+            <ul class="chip-list">
+              <li class="chip">Python</li>
+              <li class="chip">PHP</li>
+              <li class="chip">SQL</li>
+              <li class="chip">GraphQL</li>
+              <li class="chip">Bash</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Selected Experience (Engagement Logs) -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <p class="section-kicker">
+              <span class="kicker-prompt">$</span>
+              <span class="kicker-num">02</span>
+              <span class="kicker-sep">//</span>
+              <span>ENGAGEMENT_LOGS</span>
+            </p>
+            <h2 id="experience-heading" class="section-h2">
+              Selected experience<span class="accent-dot">.</span>
+            </h2>
+          </div>
+
+          <a class="cmd-anchor" href="mc_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <span>open mc_resume.pdf</span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="log-list">
+          <article class="log-entry">
+            <div class="log-gutter">
+              <span class="log-id">LOG_01</span>
+              <span class="log-date">Mar 2025 – Aug 2025</span>
+              <span class="log-loc">Pune, Maharashtra</span>
+            </div>
+
+            <div class="log-content">
+              <div class="tag-row">
+                <span class="tag tag-green">THICK-CLIENT &amp; WEB VAPT</span>
+                <span class="tag">OWASP TOP 10</span>
+                <span class="tag">THIRD-PARTY &amp; TLS</span>
+                <span class="tag">BUSINESS-IMPACT REPORTING</span>
+              </div>
+
+              <h3 class="log-title">Security Consultant Intern <span class="log-org">@ SecurityBoat</span></h3>
+              <p class="log-summary">
+                During my second internship as a Security Consultant Intern at SecurityBoat, my work focused on running end-to-end thick-client and web application VAPT engagements:
+              </p>
+
+              <ul class="log-bullets">
+                <li>I conducted end-to-end Thick Client and Web Application VAPT — from attack surface discovery and exploitation to validation and risk-rated reporting aligned with OWASP Top 10.</li>
+                <li>I uncovered high-impact flaws including Broken Access Control, XSS, and authentication bypasses, while assessing identity management, session handling, and privilege escalation paths.</li>
+                <li>I evaluated third-party software components for security risks, checking TLS configurations, certificate handling, and secure communication across web and API endpoints.</li>
+                <li>I translated technical findings into business-impact reports for non-technical stakeholders, connecting each vulnerability to data exposure and compliance risk.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="log-entry">
+            <div class="log-gutter">
+              <span class="log-id">LOG_02</span>
+              <span class="log-date">Jul 2023 – Nov 2023</span>
+              <span class="log-loc">Pune, Maharashtra</span>
+            </div>
+
+            <div class="log-content">
+              <div class="tag-row">
+                <span class="tag tag-green">15+ WEB &amp; API APPS</span>
+                <span class="tag">BURP SUITE &amp; PYTHON POCS</span>
+                <span class="tag">PATCH RETESTING</span>
+                <span class="tag">SECURE SDLC</span>
+              </div>
+
+              <h3 class="log-title">Security Consultant Intern <span class="log-org">@ SecurityBoat</span></h3>
+              <p class="log-summary">
+                In my first internship at SecurityBoat, I worked hands-on across diverse web and API applications and partnered directly with engineering teams during remediation:
+              </p>
+
+              <ul class="log-bullets">
+                <li>I manually tested 15+ web and API applications, uncovering authentication, authorization, and input validation flaws across different technology stacks.</li>
+                <li>I built custom Burp Suite workflows and Python-based PoC scripts to validate findings and cut down false positives from automated scans.</li>
+                <li>I partnered with development teams during fix cycles — retesting patches and sharing secure coding advice to support a security-aware SDLC.</li>
+                <li>I wrote structured security reports covering root cause, exploitability, and remediation that were adopted as reference material for junior consultants.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Bug Bounty & Labs (Tactical Blueprint Cards) -->
+    <section class="section" id="research" aria-labelledby="research-heading">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <p class="section-kicker">
+              <span class="kicker-prompt">$</span>
+              <span class="kicker-num">03</span>
+              <span class="kicker-sep">//</span>
+              <span>BUG_BOUNTY &amp; LABS</span>
+            </p>
+            <h2 id="research-heading" class="section-h2">
+              <span class="line-bright">Always testing.</span>
+              <span class="line-muted">Learning by breaking things<span class="accent-dot">.</span></span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="ops-grid">
+          <!-- HackerOne Card -->
+          <article class="ops-card">
+            <div class="ops-visual ops-visual-green">
+              <span class="ops-code">01 // PRODUCTION_BOUNTY</span>
+              <div class="ops-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M24 5 40 11.5v11.2c0 10-6.6 17.2-16 20.3C14.6 39.9 8 32.7 8 22.7V11.5L24 5z"></path>
+                  <path d="m17.5 24 4.5 4.5 9-9"></path>
+                </svg>
+              </div>
+              <p class="ops-caption">TARGETS: Booking.com · Bykea · Syfe</p>
+            </div>
+
+            <div class="ops-body">
+              <div class="ops-title-row">
+                <h3 class="ops-title">hackerone<span class="t-green">_</span></h3>
+                <span class="ops-year">2024 – PRESENT</span>
+              </div>
+
+              <p class="ops-desc">
+                I hunt for real-world authentication, authorization, and business logic flaws in production applications on HackerOne, with reports across Booking.com, Bykea, and Syfe.
+              </p>
+
+              <ul class="ops-points">
+                <li>I’ve earned <strong>9 HackerOne badges</strong> including <strong>4 OWASP badges</strong>.</li>
+                <li>I write triage-ready reports with clear reproduction steps, CVSS rationale, and practical remediation guidance for both technical and business audiences.</li>
+              </ul>
+
+              <div class="ops-footer">
+                <span class="ops-stat"><span class="stat-dot stat-dot-green" aria-hidden="true"></span>9 Badges · 4 OWASP</span>
+                <a class="cmd-anchor cmd-anchor-sm" href="https://hackerone.com/kshsh" target="_blank" rel="noopener noreferrer">
+                  <span>View profile</span> <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hack The Box Card -->
+          <article class="ops-card">
+            <div class="ops-visual ops-visual-cyan">
+              <span class="ops-code">02 // OFFENSIVE_LABS</span>
+              <div class="ops-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 9H8v6M34 9h6v6M14 39H8v-6M34 39h6v-6"></path>
+                  <path d="m16 20 5 4-5 4M24 28h8"></path>
+                </svg>
+              </div>
+              <p class="ops-caption">CHAIN: Enumeration → Foothold → Privilege Escalation</p>
+            </div>
+
+            <div class="ops-body">
+              <div class="ops-title-row">
+                <h3 class="ops-title">hackthebox<span class="t-cyan">_</span></h3>
+                <span class="ops-year">2024 – PRESENT</span>
+              </div>
+
+              <p class="ops-desc">
+                I use Hack The Box labs and machines to challenge myself across full penetration testing workflows and keep my hands-on web exploitation skills sharp.
+              </p>
+
+              <ul class="ops-points">
+                <li>I practise the full pentesting methodology (enumeration → foothold → privilege escalation) across Linux and Windows environments.</li>
+                <li>I solve web-focused CTF challenges covering SQLi, XSS, command injection, file inclusion, auth bypass, and insecure deserialization.</li>
+              </ul>
+
+              <div class="ops-footer">
+                <span class="ops-stat"><span class="stat-dot stat-dot-cyan" aria-hidden="true"></span>Linux &amp; Windows · Web CTFs</span>
+                <a class="cmd-anchor cmd-anchor-sm" href="https://hackthebox.com/users/466587" target="_blank" rel="noopener noreferrer">
+                  <span>View profile</span> <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pentesting Cheatsheet Reference Card -->
+        <article class="cheatsheet-card" aria-labelledby="cheatsheet-heading">
+          <div class="cheatsheet-copy">
+            <span class="cheatsheet-kicker">03 // REFERENCE_CHEATSHEET</span>
+            <h3 id="cheatsheet-heading" class="cheatsheet-title">pentesting_cheatsheet<span class="t-green">_</span></h3>
+            <p class="cheatsheet-desc">
+              I maintain a public GitBook as a pentesting cheatsheet — a straightforward reference I keep handy to look things up quickly during assessments, labs, and hands-on testing.
+            </p>
+          </div>
+          <div class="cheatsheet-action">
+            <a class="btn btn-ghost" href="https://kavish.gitbook.io/" target="_blank" rel="noopener noreferrer">
+              <span>kavish.gitbook.io</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Additional Verified Profiles Bar -->
+        <div class="endpoints-bar" aria-label="Additional verified security profiles">
+          <span class="matrix-label">[OTHER_PROFILES]</span>
+          <div class="endpoints-links">
+            <a href="https://medium.com/@kavish2002ev3" target="_blank" rel="noopener noreferrer">Medium <span>/@kavish2002ev3 ↗</span></a>
+            <a href="https://tryhackme.com/p/kavish.00" target="_blank" rel="noopener noreferrer">TryHackMe <span>/kavish.00 ↗</span></a>
+            <a href="https://portal.offsec.com/public-profile/3a3b9320-1ca3-40c1-995b-00b390475e42" target="_blank" rel="noopener noreferrer">OffSec Profile <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Certifications & Education -->
+    <section class="section section-alt" id="credentials" aria-labelledby="credentials-heading">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <p class="section-kicker">
+              <span class="kicker-prompt">$</span>
+              <span class="kicker-num">04</span>
+              <span class="kicker-sep">//</span>
+              <span>CERTS &amp; EDUCATION</span>
+            </p>
+            <h2 id="credentials-heading" class="section-h2">
+              <span class="line-bright">Specialized training.</span>
+              <span class="line-muted">Engineering foundations<span class="accent-dot">.</span></span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="credentials-grid">
+          <div>
+            <h3 class="sub-kicker">[CERTIFICATIONS]</h3>
+            <ul class="cert-list">
+              <li class="cert-item">
+                <span class="cert-idx">01</span>
+                <span class="cert-name">TCM Security PEH</span>
+                <span class="tag tag-green">COMPLETED</span>
+              </li>
+              <li class="cert-item">
+                <span class="cert-idx">02</span>
+                <span class="cert-name">Web App Hacking (NahamSec)</span>
+                <span class="tag tag-green">COMPLETED</span>
+              </li>
+              <li class="cert-item">
+                <span class="cert-idx">03</span>
+                <span class="cert-name">API Security Fundamentals</span>
+                <span class="tag tag-green">COMPLETED</span>
+              </li>
+              <li class="cert-item">
+                <span class="cert-idx">04</span>
+                <span class="cert-name">API Penetration Testing</span>
+                <span class="tag tag-green">COMPLETED</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="sub-kicker">[EDUCATION]</h3>
+            <div class="edu-stack">
+              <article class="edu-card">
+                <div class="edu-top">
+                  <span class="edu-date">2026 – PRESENT</span>
+                  <span class="tag tag-cyan">POSTGRADUATE</span>
+                </div>
+                <h4 class="edu-degree">M.Tech — Data Science and Machine Learning</h4>
+                <p class="edu-school">Rashtriya Raksha University</p>
+              </article>
+
+              <article class="edu-card">
+                <div class="edu-top">
+                  <span class="edu-date">2020 – 2024</span>
+                  <span class="tag tag-green">CGPA: 9.5</span>
+                </div>
+                <h4 class="edu-degree">B.Tech — Computer Engineering</h4>
+                <p class="edu-school">Bharati Vidyapeeth College of Engineering, Pune</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: Contact (Terminal Comms Dispatch) -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-container">
+        <div class="terminal-emblem" aria-hidden="true">&gt;_</div>
+        <p class="contact-eyebrow">05 // DIRECT_COMMS</p>
+        <h2 id="contact-heading" class="section-h2 contact-h2">
+          <span class="line-bright">Let’s grab a coffee.</span>
+          <span class="line-muted">Get to know each other better<span class="accent-dot">.</span></span>
+        </h2>
+        <p class="contact-lead">
+          Whether you’re hiring for VAPT or application security, want to talk through a security challenge, or just want to connect — feel free to reach out anytime.
+        </p>
+
+        <div class="comms-bar">
+          <div class="comms-left">
+            <span class="comms-prompt" aria-hidden="true">mailto:&gt;</span>
+            <a class="comms-email" href="mailto:kavish2002ev3@gmail.com">kavish2002ev3@gmail.com</a>
+          </div>
+          <div class="comms-actions">
+            <button
+              type="button"
+              class="btn-copy"
+              id="copy-email-btn"
+              data-copy="kavish2002ev3@gmail.com"
+              aria-label="Copy email address kavish2002ev3@gmail.com"
+            >
+              [COPY]
+            </button>
+            <a class="btn btn-primary btn-bar" href="mailto:kavish2002ev3@gmail.com">
+              <span>send_email</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+
+        <dl class="comms-grid">
+          <div class="comms-cell">
+            <dt>LINKEDIN</dt>
+            <dd>
+              <a href="https://linkedin.com/in/kavish-shah-00188a221/" target="_blank" rel="noopener noreferrer">
+                kavish-shah-00188a221 ↗
+              </a>
+            </dd>
+          </div>
+          <div class="comms-cell">
+            <dt>GITHUB</dt>
+            <dd>
+              <a href="https://github.com/kshsh00" target="_blank" rel="noopener noreferrer">
+                github.com/kshsh00 ↗
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="brand brand-sm" href="#intro" aria-label="Kavish Shah — Top">
+          <span class="brand-user">kavish</span><span class="brand-sep">@</span><span class="brand-host">vapt</span><span class="brand-sep">:~$</span>
+        </a>
+        <p class="footer-note">EOF // &copy; <span id="current-year">2026</span> Kavish Shah</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#skills">skills</a>
+        <a href="#experience">exp</a>
+        <a href="#research">bounty</a>
+        <a href="#credentials">certs</a>
+        <a href="#contact">contact</a>
+        <a href="#top">top ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
