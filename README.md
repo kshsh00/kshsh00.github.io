@@ -1,6 +1,6 @@
 # Kavish Shah — Information Security Portfolio
 
-An offensive-security / terminal-HUD single-page portfolio built with plain HTML, CSS, and minimal JavaScript. All facts, dates, titles, credentials, and profile links are sourced from `mc_resume.pdf`.
+An offensive-security / terminal-HUD single-page portfolio built with plain HTML, CSS, and minimal JavaScript. All facts, dates, titles, credentials, and profile links are sourced from `Resume.pdf`.
 
 ## Design Overview
 
@@ -22,11 +22,11 @@ An offensive-security / terminal-HUD single-page portfolio built with plain HTML
 ├── styles.css       # Offensive terminal HUD dark theme & responsive layout
 ├── script.js        # Hero prompt typing, mobile drawer, scroll-spy, copy-email
 ├── favicon.svg      # Terminal ">_" monogram favicon
-├── mc_resume.pdf    # Source resume linked from Hero, Experience, and Footer
+├── Resume.pdf    # Source resume linked from Hero, Experience, and Footer
 └── README.md        # Local preview and deployment guide
 ```
 
-> **Privacy note before publishing:** `index.html` links to `mc_resume.pdf`. If your PDF still contains your phone number, redact or omit `mc_resume.pdf` before deploying publicly.
+> **Privacy note before publishing:** `index.html` links to `Resume.pdf`. If your PDF still contains your phone number, redact or omit `Resume.pdf` before deploying publicly.
 
 ## Running Locally
 
@@ -40,7 +40,7 @@ Then open `http://localhost:8000` in your browser (or run `npx serve .`).
 
 ### GitHub Pages
 1. Create a public repo (e.g. `kshsh00.github.io` or `portfolio`).
-2. Push `index.html`, `styles.css`, `script.js`, `favicon.svg`, `README.md`, and optionally `mc_resume.pdf` to `main`.
+2. Push `index.html`, `styles.css`, `script.js`, `favicon.svg`, `README.md`, and optionally `Resume.pdf` to `main`.
 3. Go to **Settings → Pages**, set **Source** to **Deploy from a branch** (`main` / `/(root)`), and save.
 
 ### Cloudflare Pages / Netlify
